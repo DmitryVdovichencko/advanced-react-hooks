@@ -3,7 +3,7 @@
 
 import * as React from 'react'
 
-// const countReducer = (previousCount, newCount) =>  typeof newCount === 'function' ? newCount(previousCount) : newCount;
+// const countReducer = (state, action) =>  typeof action === 'function' ? action(state) : {...state, ...action};
 
 function countReducer(state, action) {
   switch (action.type) {
